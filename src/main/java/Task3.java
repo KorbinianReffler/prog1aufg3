@@ -30,12 +30,12 @@ public class Task3 {
 
         if (currentTerm.startsWith("(")) {
             if (currentTerm.endsWith(")")) {
-                currentTerm = currentTerm.substring(1, currentTerm.length()-1);
+                currentTerm = currentTerm.substring(1, currentTerm.length() - 1);
             } else {
                 throw new RuntimeException("The SExpr starts with a '(' " +
                         "and should therefore end with a ')'");
             }
-        }  else if (currentTerm.contains("(") || currentTerm.contains(")")) {
+        } else if (currentTerm.contains("(") || currentTerm.contains(")")) {
             throw new RuntimeException("'(' is only allowed as the first letter after an optional operator\n" +
                     "')' is only allowed as the last letter");
         }

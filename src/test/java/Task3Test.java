@@ -12,7 +12,7 @@ public class Task3Test extends Task3 {
         expectError(() -> getExpr(""), "SExpr contain two Digits and an Operator and should therefore have a length of 3");
         expectError(() -> getExpr("("), "The SExpr starts with a '(' and should therefore end with a ')'");
         expectError(() -> getExpr(")"), "'(' is only allowed as the first letter after an optional operator\n" +
-                                                     "')' is only allowed as the last letter");
+                "')' is only allowed as the last letter");
         expectError(() -> getExpr("()"), "SExpr contain two Digits and an Operator and should therefore have a length of 3");
         expectError(() -> getExpr("11+1"), "SExpr contain two Digits and an Operator and should therefore have a length of 3");
         expectError(() -> getExpr("123"), "The operator of the SExpr should be a value of [+,-,*,/]");

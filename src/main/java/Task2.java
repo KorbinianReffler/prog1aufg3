@@ -7,7 +7,7 @@ public class Task2 {
         validateTerm(term);
 
         var op1 = term.charAt(0) == 'T';
-        var op2 = term.charAt(term.length()-1) == 'T';
+        var op2 = term.charAt(term.length() - 1) == 'T';
 
         switch (term.substring(1, term.length() - 1)) {
             case "&" -> System.out.printf("%s & %s = %s%n", op1, op2, op1 & op2);
