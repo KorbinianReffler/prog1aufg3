@@ -1,4 +1,4 @@
-#Disclaimer
+# Disclaimer
 Wenn das Projekt bei euch nicht baut liegt es mit an Sicherheit an einem der folgenden Punkte
 1. Das Projekt wurde nicht als Maven-Projekt in die Ide importiert
 2. Die Maven Dependencies wurde nicht heruntergeladen
